@@ -28,7 +28,7 @@ module.exports.policies = {
   '*': ['noCache', 'hasToken'],
 
   AuthController: {
-    '*': ['noCache', 'hasToken'],
+    '*': ['noCache'],
   },
 
   UserController: {

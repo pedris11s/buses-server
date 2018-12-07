@@ -14,6 +14,7 @@ git clone http://git.kimirik.com/tazpro/wsoft.buses-server.git
 3. Install dependencies
 
 ```
+cd wsoft.buses-server
 npm install
 ```
 
