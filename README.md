@@ -23,6 +23,8 @@ npm install
 sails lift
 ```
 
+Note: The user by default is "root" and pass "toor". You don't need to created.
+
 ## Author
 
     Pedro Torres Paredes
