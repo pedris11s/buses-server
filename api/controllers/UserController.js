@@ -93,17 +93,7 @@ _.merge(exports, {
       });
     });
   },
-  // toDo: guille, 5/3/18 replace for the blueprint action (auto generate rest api)
-  findUserById: (req, res) => {
-    sails.models.user.findOne({
-      id: req.param('userId')
-    }).exec((err, user) => {
-      if (err) {
-        return sails.log.error('UserController.js', err);
-      }
-      res.json({user: user});
-    });
-  },
+
   updateUser: function (req, res) {
     sails.services.repository.user.checkUserData(req.body.username, req.body.email)
       .then((users) => {
@@ -185,13 +175,11 @@ _.merge(exports, {
   updateProfile: function (req, res) {
     // noinspection JSUnusedLocalSymbols
     if (!req.user) {
-      // toDo: guille, 5/7/18 translate
       return res.json({success: false, msg: 'No authenticated user'});
     }
     return sails.models.user.findOne({id: req.user.id}).populate('roles')
       .then((user) => {
         if (user.id !== req.body.id && !sails.services.repository.user.isRoleAdmin(user)) {
-          // toDo: guille, 5/7/18 translate
           res.json({success: false, msg: 'The user do not have permission for this action'});
           return Promise.break();
         }

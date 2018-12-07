@@ -104,7 +104,7 @@ _.merge(exports, {
     const usr = JSON.stringify(sails.services.repository.user.cleanUser(user));
     const usrScript = encodeURI(usr);
     const script = '<script> window.opener.postMessage(' + '"' + `${usrScript}` + '"' + ', "*"); window.close(); </script>';
-    // todo descomentariar esto para produccion y tambien en el cliente Oreste
+    // todo descomentariar esto para produccion y tambien en el cliente
     // const script = '<script> window.opener.postMessage(' + '"' + `${usr}` + '"' + ', "https://wankar.com"); window.close(); </script>';
     const isDevice = module.exports.isMobileDevice(req.headers['user-agent']);
     console.log(script);

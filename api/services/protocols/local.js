@@ -19,7 +19,6 @@ module.exports = {
   createUser: (_user, res) => {
     // check the password
     if (_user.password === '') {
-      // toDo: guille, 5/5/18 translate
       return res.json({success: false, msg: 'Empty password'});
     }
 
@@ -28,7 +27,6 @@ module.exports = {
         return res.json({success: false, msg: err.message});
       }
       if (users.length > 0) {
-        // toDo: guille, 3/16/18 internationalize this message
         return res.json({success: false, msg: 'El usuario o el correo se encuentran en uso'});
       }
       return sails.services.repository.user.createUser(_user)
