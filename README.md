@@ -1,4 +1,4 @@
-## Get Started
+## Deploying API
 
 1. Configure DB
 
