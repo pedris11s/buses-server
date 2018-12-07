@@ -33,8 +33,5 @@ module.exports.policies = {
 
   UserController: {
     '*': ['noCache'],
-    'updateUser': ['noCache', 'adminPolicy'],
-    'deleteUser': ['noCache', 'adminPolicy'],
-    'verifyAccount': ['noCache']
   },
 };
