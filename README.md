@@ -22,3 +22,12 @@ npm install
 ```
 sails lift
 ```
+
+## Licence
+
+Private Code. © WankarTech 2018
+
+## Author
+
+    Pedro Torres Paredes
+    - Twitter: @pedris11s
