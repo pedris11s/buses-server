@@ -1,0 +1,25 @@
+version: rvices:
+  wankar_material:
+    container_name: wankar_material
+    hostname: wankar_material
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+#    command: pm2 start /home/app/wankar/app.js
+    build:
+      context: .
+      dockerfile: DockerfileDevelopment
+    working_dir: /wankar
+    tty: true
+    volumes:
+      - .:/wankar
+    ports:
+      - "3000:1337"
+    links:
+      - wankar_mongo
+#    restart: always
+  wankar_mongo:
+    image: nexus.prod.uci.cu/mongo
+    hostname: wankar_mongo
+    ports:
+      - "27017:27017"

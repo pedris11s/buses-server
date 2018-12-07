@@ -1,0 +1,40 @@
+image: node:latest
+
+stages:
+  - test
+  - quality
+#  - deploy
+
+test:
+  stage: test
+  tags: [docker]
+  script:
+    - npm install
+    - npm run test
+
+quality:
+  stage: quality
+  tags: [docker]
+  script:
+    - npm install
+    - npm run eslint
+
+#deploy-test-server:
+#  stage: deploy
+#  tags: [deploy]
+#  only:
+#    refs:
+#      - development
+#  script:
+#    - whoami
+#    - rsync -a /home/wankaruser/app/development/assets/assets/ /home/wankaruser/app/saveAssets/
+#    - rm -fr /home/wankaruser/app/development/*
+#    - cp -fr ./ /home/wankaruser/app/development
+#    - cd /home/wankaruser/app/development
+#    - npm install
+#    - mkdir -p assets
+#    - chmod 777 -R assets
+#    - cd /home/wankaruser/app/frontend
+#    - ng build --prod --output-path /home/wankaruser/app/development/assets
+#    - chmod 777 -R /home/wankaruser/app/development/assets/assets/
+#    - rsync -a /home/wankaruser/app/saveAssets/ /home/wankaruser/app/development/assets/assets/

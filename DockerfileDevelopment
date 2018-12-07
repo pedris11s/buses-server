@@ -1,0 +1,33 @@
+# Dockerfile
+# using debian:jessie for it's smaller size over ubuntu
+FROM nexus.prod.uci.cu/node:latest
+
+# Creating user session
+RUN useradd --user-group --create-home --shell /bin/false app
+RUN adduser app sudo
+
+# Set environment variables
+ENV HOME /home/app
+
+# Create file directory
+RUN mkdir $HOME/wankar
+
+# add uci npm repository
+RUN touch $HOME/.npmrc
+RUN echo "registry=http://nexus.prod.uci.cu/repository/npm-all" >> $HOME/.npmrc
+#RUN echo "strict-ssl=false" >> $HOME/.npmrc
+
+# Give permision to the home directory to the user
+RUN chown -R app:app $HOME/*
+# USER app
+
+# Install pm2 so we can run our application
+RUN npm i -g pm2
+
+# Set the work directory
+WORKDIR $HOME/wankar
+
+#Expose the port
+EXPOSE 3000 1337 27017
+
+CMD ["pm2", "start", "ecosystem.config.js"]

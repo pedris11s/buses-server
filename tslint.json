@@ -1,0 +1,33 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "class-name": false,
+    "indent": true,
+    "no-trailing-whitespace": true,
+    "one-line": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "triple-equals": true,
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "no-empty": true,
+    "no-empty-interface": true,
+    "no-magic-numbers": true,
+    "no-console": [
+      "warn"
+    ]
+  },
+  "rulesDirectory": []
+}
