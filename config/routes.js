@@ -43,6 +43,9 @@ module.exports.routes = {
   //cooperativa controller
   'put /api/cooperativa/vote': {controller: 'CooperativaController', action: 'vote'},
 
+  //bus controller
+  'put /api/bus/vote': {controller: 'BusController', action: 'vote'},
+
   // user controller
   'get /api/user/list': {controller: 'UserController', action: 'list'},
   'get /api/user/current_user': {controller: 'UserController', action: 'currentUser'},

@@ -53,7 +53,13 @@ module.exports = {
     coopsLikes: {
       collection: 'cooperativa',
       via: 'users'
-    }
+    },
+
+    busesLikes: {
+      collection: 'bus',
+      via: 'users'
+    },
+
   },
 
   getimageRealName: function () {

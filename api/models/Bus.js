@@ -46,6 +46,11 @@ module.exports = {
       model: 'cooperativa'
     },
 
+    users: {
+      collection: 'user',
+      via: 'busesLikes'
+    },
+
   },
 
 };
