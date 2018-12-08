@@ -47,6 +47,12 @@ module.exports = {
       required: true
     },
 
+    likes: {
+      type: 'number',
+      defaultsTo: 0
+    },
+
+
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
@@ -67,8 +73,12 @@ module.exports = {
 
     oficina: {
       model: 'oficina'
-    }
+    },
 
+    users: {
+      collection: 'user',
+      via: 'coopsLikes'
+    },
 
 
   },

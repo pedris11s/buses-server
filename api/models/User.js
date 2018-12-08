@@ -48,6 +48,11 @@ module.exports = {
     // Associations
     role: {
       model: 'role'
+    },
+
+    coopsLikes: {
+      collection: 'cooperativa',
+      via: 'users'
     }
   },
 
