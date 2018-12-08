@@ -34,6 +34,11 @@ module.exports = {
       type: 'string',
     },
 
+    likes: {
+      type: 'number',
+      defaultsTo: 0
+    },
+
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
