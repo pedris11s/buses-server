@@ -79,9 +79,6 @@ module.exports = {
       collection: 'user',
       via: 'coopsLikes'
     },
-
-
-  },
-
+  }
 };
 

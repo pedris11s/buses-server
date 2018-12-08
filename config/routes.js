@@ -40,10 +40,12 @@ module.exports.routes = {
   // for verify the account in the register process
   'get /api/verify_account/:verify_token': {controller: 'UserController', action: 'verifyAccount'},
 
+  //cooperativa controller
+  'put /api/cooperativa/vote': {controller: 'CooperativaController', action: 'vote'},
+
   // user controller
   'get /api/user/list': {controller: 'UserController', action: 'list'},
   'get /api/user/current_user': {controller: 'UserController', action: 'currentUser'},
-  'get /api/user/finduserbyid/:userId': {controller: 'UserController', action: 'findUserById'},
   'put /api/user/profile': {controller: 'UserController', action: 'updateProfile'},
   'put /api/user/password': {controller: 'UserController', action: 'updateProfilePassword'},
   '/api/user/showUser': {controller: 'UserController', action: 'showUser'}
