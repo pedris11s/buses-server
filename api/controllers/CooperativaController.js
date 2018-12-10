@@ -32,6 +32,16 @@ module.exports = {
       .catch((e) => {
         res.serverError(e);
       });
+  },
+
+  likesById: (req, res, next) => {
+    sails.models.cooperativa.find(req.param('id'))
+      .then(coop => {
+        res.json({likes: coop.likes});
+      })
+      .catch(err => {
+        res.serverError(err);
+      });
   }
 };
 
