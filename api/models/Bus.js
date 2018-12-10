@@ -56,7 +56,10 @@ module.exports = {
       via: 'busesLikes'
     },
 
+    ruta: {
+      collection: 'ruta',
+      via: 'bus'
+    }
   },
-
 };
 

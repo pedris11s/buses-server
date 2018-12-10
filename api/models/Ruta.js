@@ -47,8 +47,12 @@ module.exports = {
     cooperativas: {
       collection: 'cooperativa',
       via: 'rutas'
-    }
+    },
 
+    bus: {
+      model: 'bus',
+      unique: true
+    }
   },
 
 };
