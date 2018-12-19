@@ -57,8 +57,7 @@ module.exports = {
     },
 
     ruta: {
-      collection: 'ruta',
-      via: 'bus'
+      model: 'ruta',
     }
   },
 };

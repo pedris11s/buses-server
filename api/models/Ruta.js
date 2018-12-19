@@ -49,9 +49,9 @@ module.exports = {
       via: 'rutas'
     },
 
-    bus: {
-      model: 'bus',
-      unique: true
+    buses: {
+      collection: 'bus',
+      via: 'ruta'
     }
   },
 
