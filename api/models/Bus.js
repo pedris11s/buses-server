@@ -58,7 +58,12 @@ module.exports = {
 
     ruta: {
       model: 'ruta',
-    }
+    },
+
+    denuncias: {
+      collection: 'denuncia',
+      via: 'bus'
+    },
   },
 };
 
