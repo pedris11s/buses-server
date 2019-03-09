@@ -8,13 +8,13 @@
 2. Clone the project
 
 ```
-git clone http://git.kimirik.com/tazpro/wsoft.buses-server.git
+git clone https://github.com/pedris11s/buses-server.git
 ```
 
 3. Install dependencies
 
 ```
-cd wsoft.buses-server
+cd buses-server
 npm install
 ```
 
@@ -33,6 +33,6 @@ Note: The user by default is "root" and pass "toor". You don't need to created.
 
 ## Licence
 
-Private Code. © WankarTech 2018
+Private Code. © WankarTech 2019
 
 
