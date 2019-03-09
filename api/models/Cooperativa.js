@@ -47,12 +47,6 @@ module.exports = {
       required: true
     },
 
-    likes: {
-      type: 'number',
-      defaultsTo: 0
-    },
-
-
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝

@@ -34,9 +34,14 @@ module.exports = {
       type: 'string',
     },
 
-    likes: {
+    totalVotes: {
       type: 'number',
       defaultsTo: 0
+    },
+
+    rating: {
+      type: 'number',
+      defaultsTo: 0,
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
