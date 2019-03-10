@@ -44,6 +44,11 @@ module.exports = {
       defaultsTo: 0,
     },
 
+    sumRating: {
+        type: 'number',
+        defaultsTo: 0
+    },
+
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
