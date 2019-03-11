@@ -21,9 +21,9 @@ module.exports = {
           //console.log(busaux.rating + 1);
           promises.push(Bus.addToCollection(modeloId, 'users', userId));
           promises.push(sails.models.bus.update({id: modeloId}).set({ 
-                        rating: (busaux.sumRating + parseInt(value)) / (busaux.totalVotes + 1), 
+                        rating: (busaux.sumRating + parseFloat(value)) / (busaux.totalVotes + 1), 
                         totalVotes: busaux.totalVotes + 1,
-                        sumRating: busaux.sumRating + parseInt(value)
+                        sumRating: busaux.sumRating + parseFloat(value)
           }))
         // }
         // // else {
