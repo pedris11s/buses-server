@@ -46,7 +46,11 @@ module.exports = {
       type: 'string',
       required: true
     },
-
+    
+    rating: {
+      type: 'number',
+      defaultsTo: 0
+    },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
