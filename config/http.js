@@ -138,9 +138,9 @@ module.exports.http = {
       }
       ));
       passport.use(new TwitterStrategy({
-        consumerKey: 'F0hCOJBMChSPHqi4YtKJ2HwmJ',
-        consumerSecret: 'BIvC1lHUx7CjREXcCCEB6er4FxIMvmToMZxCOBqjM2CPZDM0JM',
-        callbackURL: 'http://www.kimirik.com/auth/twitter/callback',
+        consumerKey: 'SGYRryWDyCKyFm2dfRZ3YGG4M',
+        consumerSecret: '0wjPPDOCTyYZNu9PXIfsY2H9ite8Bv21f1kRHYI5iME7Wkr8pE ',
+        callbackURL: 'http://www.wankar.com/auth/twitter/callback',
         includeEmail: true
       },
       (req, token, tokenSecret, profile, done) => {
