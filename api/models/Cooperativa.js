@@ -51,6 +51,11 @@ module.exports = {
       type: 'number',
       defaultsTo: 0
     },
+
+    cantAccidentes: {
+      type: 'number',
+      defaultsTo: 0
+    },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝

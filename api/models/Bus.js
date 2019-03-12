@@ -45,10 +45,14 @@ module.exports = {
     },
 
     sumRating: {
-        type: 'number',
-        defaultsTo: 0
+      type: 'number',
+      defaultsTo: 0
     },
 
+    cantAccidentes: {
+      type: 'number',
+      defaultsTo: 0
+    },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
